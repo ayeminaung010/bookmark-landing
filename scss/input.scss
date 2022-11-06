@@ -1,0 +1,119 @@
+        $danger: hsl(0, 94%, 66%);
+        $primary:hsl(231, 69%, 60%);
+        $accordion-button-active-color: $danger;
+        @import"../node_modules/bootstrap/scss/bootstrap.scss";
+        @import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+        $font-family-sans-serif: 'Rubik',
+        sans-serif;
+        #pills-tab {
+            .nav-link {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+        
+        .nav-item .active {
+            background-color: white !important;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 4px solid $danger;
+            border-radius: 0;
+        }
+        
+        #destopImage {
+            display: block;
+        }
+        
+        #mobileImage {
+            display: none;
+        }
+        
+        .mb-150 {
+            margin-bottom: 150px;
+        }
+        
+        .borderBottom {
+            border-bottom: 6px dotted grey;
+        }
+        
+        @media only screen and (max-width: 500px) {
+            #navBarTop {
+                li {
+                    border-bottom: 1px solid grey;
+                    border-top: 1px solid grey;
+                }
+                ul {
+                    margin-top: 20px;
+                }
+            }
+            #destopImage {
+                display: none;
+            }
+            #mobileImage {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+            #text-heroSection {
+                text-align: center;
+            }
+            #btn-Hero {
+                justify-content: center;
+            }
+            #pills-tab {
+                button {
+                    padding: 0;
+                }
+                li {
+                    padding-bottom: 10px;
+                }
+                .nav-link {
+                    padding-left: 2.5rem;
+                    padding-right: 2.5rem;
+                }
+            }
+            .contactUs {
+                margin-top: 10px;
+            }
+            .footerMargin {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        .outline-Btn:hover {
+            background-color: white;
+            border: 2px solid $danger;
+            color: $danger;
+        }
+        
+        footer {
+            background-color: hsl(229, 31%, 21%);
+            a {
+                color: white !important;
+            }
+        }
+        
+        #loginBtn:hover {
+            background-color: white !important;
+            border: 1px solid red !important;
+            color: $danger !important;
+        }
+        
+        .whiteBtn:hover {
+            background-color: white !important;
+            border: 1px solid $primary;
+            color: $primary;
+        }
+        
+        #btn-Hero .blackBtn:hover {
+            background-color: white !important;
+            border: 1px solid black !important;
+            color: black !important;
+        }
+        
+        .red:hover {
+            color: $danger !important;
+        }
